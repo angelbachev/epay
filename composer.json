@@ -1,0 +1,38 @@
+{
+    "name": "angelbachev/epay",
+    "type": "library",
+    "description": "Epay.bg API wrapper for Laravel 5.*",
+    "keywords": [
+        "Angel Bachev",
+        "Epay"
+    ],
+    "homepage": "https://github.com/angelbachev/laravel-epay",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": ":Angel Bachev",
+            "email": "angelbachev@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "illuminate/support": "~5.1",
+        "php" : "~5.5|~7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "AngelBachev\\Epay\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AngelBachev\\Epay\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}

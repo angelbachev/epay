@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false"
+         syntaxCheck="false"
+>
+    <testsuites>
+        <testsuite name="Package Test Suite">
+            <directory suffix=".php">./tests/</directory>
+        </testsuite>
+    </testsuites>
+    <php>
+        <env name="EPAY.mode" value="stage"/>
+        <env name="EPAY.stage.client_id" value="D603646155"/>
+        <env name="EPAY.stage.secret" value="5OOVAYS74OCKAYZY48HJQUJXIG4Z60O88TQTFOKYCFD0LCV5HFIISJ89QCIXBY6R"/>
+    </php>
+</phpunit>
