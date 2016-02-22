@@ -1,5 +1,5 @@
 <?php
-namespace packages\AngelBachev\Epay\Test;
+namespace packages\AngelBachev\Epay\Tests;
 
 
 use AngelBachev\Epay\Epay;
