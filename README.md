@@ -21,14 +21,22 @@ AngelBachev\Epay\EpayServiceProvider::class
 * Add the alias to your $aliases array in config/app.php file like:
 
 ```
-Epay' => AngelBachev\Epay\Facades\Epay::class
+'Epay' => AngelBachev\Epay\Facades\Epay::class
 ```
 
-* Run the following command to publish configuration:
-```
-php artisan vendor:publish
-```
-
+* Run one of the following commands to publish package configuration depending on your needs:
+    * To publish only **angelbachev/epay** package configuration:
+    ```
+    php artisan vendor:publish --provider="AngelBachev\Epay\EpayServiceProvider"
+    ```
+    * To publish configuration of all packages you use:
+    ```
+    php artisan vendor:publish --tag="config"
+    ```
+    * To publish all assets of all packages:
+    ```
+    php artisan vendor:publish
+    ```
 * Add the following lines to your .env file
 ```
 # Epay configuration values

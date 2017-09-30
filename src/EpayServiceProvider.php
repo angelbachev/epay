@@ -15,7 +15,7 @@ class EpayServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__ . '/config/config.php' => config_path('epay.php'),
-        ]);
+        ], 'config');
     }
 
     /**
