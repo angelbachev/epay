@@ -131,9 +131,9 @@ class Epay
                     $item = [
                         'invoice'  => $regs[1],
                         'status'   => $regs[2],
-                        'pay_date' => $regs[4],
-                        'stan'     => $regs[5],
-                        'bcode'    => $regs[6],
+                        'pay_date' => $regs[4] ?? '',
+                        'stan'     => $regs[5] ?? '',
+                        'bcode'    => $regs[6] ?? '',
                     ];
 
                     $result['items'][] = $item;
