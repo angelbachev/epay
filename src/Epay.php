@@ -176,7 +176,7 @@ class Epay
      * @method getData
      * @return string  base64 encoded data
      */
-    private function getData()
+    public function getData()
     {
         return $this->data;
     }
@@ -210,7 +210,7 @@ class Epay
      * @method getChecksum
      * @return string      hashed data
      */
-    private function getChecksum()
+    public function getChecksum()
     {
         return $this->checksum;
     }
