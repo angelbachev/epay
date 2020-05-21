@@ -131,9 +131,9 @@ class Epay
                     $item = [
                         'invoice'  => $regs[1],
                         'status'   => $regs[2],
-                        'pay_date' => $regs[4],
-                        'stan'     => $regs[5],
-                        'bcode'    => $regs[6],
+                        'pay_date' => $regs[4] ?? '',
+                        'stan'     => $regs[5] ?? '',
+                        'bcode'    => $regs[6] ?? '',
                     ];
 
                     $result['items'][] = $item;
@@ -176,7 +176,7 @@ class Epay
      * @method getData
      * @return string  base64 encoded data
      */
-    private function getData()
+    public function getData()
     {
         return $this->data;
     }
@@ -210,7 +210,7 @@ class Epay
      * @method getChecksum
      * @return string      hashed data
      */
-    private function getChecksum()
+    public function getChecksum()
     {
         return $this->checksum;
     }
